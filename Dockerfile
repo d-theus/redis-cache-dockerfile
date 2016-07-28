@@ -6,4 +6,5 @@ WORKDIR /var/redis
 ADD redis.conf /var/redis
 RUN chown -R redis /var/redis
 USER redis
+EXPOSE 6379
 CMD redis-server redis.conf
